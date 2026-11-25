@@ -10,7 +10,8 @@
 
   <div class="toolbar">
     <a href="index.html" class="btn-nav">Volver a Página 1</a>
-    <button class="btn-print" onclick="window.print()">Imprimir Página 2</button>
+    <button type="button" id="btn-reset-fields" class="btn-reset">Restaurar Valores</button>
+    <button type="button" class="btn-print" onclick="window.print()">Imprimir Página 2</button>
   </div>
 
   <div class="page">
@@ -36,11 +37,11 @@
     </p>
 
     <p class="body-text" style="margin-top: 18px;">
-      <strong>Lugar y fecha:</strong> <span class="filled-val">Tegucigalpa M.D.C., 25 de noviembre del 2026</span>
+      <strong>Lugar y fecha:</strong> <span class="filled-val" contenteditable="true" data-key="lugarFecha">Tegucigalpa M.D.C., 25 de noviembre del 2026</span>
     </p>
 
     <div class="signature-block">
-      Norma Guadalupe García Flores<br>
+      <span contenteditable="true" data-key="firmaNombre">Norma Guadalupe García Flores</span><br>
       <span style="font-weight: normal; font-size: 9pt;">Nombre Completo y Firma del Solicitante</span>
     </div>
 
@@ -53,23 +54,23 @@
       <tbody>
         <tr>
           <td class="label-col">Teléfono Fijo 1</td>
-          <td class="val-col">N/A</td>
+          <td class="val-col" contenteditable="true" data-key="telFijo1">N/A</td>
         </tr>
         <tr>
           <td class="label-col">Teléfono Fijo 2</td>
-          <td class="val-col">N/A</td>
+          <td class="val-col" contenteditable="true" data-key="telFijo2">N/A</td>
         </tr>
         <tr>
           <td class="label-col">Celular 1</td>
-          <td class="val-col">+504 3373 - 1837</td>
+          <td class="val-col" contenteditable="true" data-key="telCelular1">+504 3373 - 1837</td>
         </tr>
         <tr>
           <td class="label-col">Celular 2</td>
-          <td class="val-col">+504 9302 - 2086</td>
+          <td class="val-col" contenteditable="true" data-key="telCelular2">+504 9302 - 2086</td>
         </tr>
         <tr>
           <td class="label-col">Correo Electrónico</td>
-          <td class="val-col">profenorma20015@gmail.com</td>
+          <td class="val-col" contenteditable="true" data-key="correoElec">profenorma20015@gmail.com</td>
         </tr>
       </tbody>
     </table>
@@ -88,14 +89,15 @@
       </thead>
       <tbody>
         <tr>
-          <td>Obdulio Isai Ramirez García</td>
-          <td>Hijo</td>
-          <td>+504 8763 - 8717</td>
-          <td>&nbsp;</td>
+          <td contenteditable="true" data-key="refNombre">César Emanuel Castro García</td>
+          <td contenteditable="true" data-key="refParentesco">Hijo</td>
+          <td contenteditable="true" data-key="refTelefono">+504 </td>
+          <td contenteditable="true" data-key="refDireccion">Residencial San Juan, Tegucigalpa M.D.C.</td>
         </tr>
       </tbody>
     </table>
   </div>
 
+  <script src="js/app.js"></script>
 </body>
 </html>

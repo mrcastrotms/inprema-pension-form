@@ -9,7 +9,8 @@
 <body>
 
   <div class="toolbar">
-    <button class="btn-print" onclick="window.print()">Imprimir Página 1</button>
+    <button type="button" id="btn-reset-fields" class="btn-reset">Restaurar Valores</button>
+    <button type="button" class="btn-print" onclick="window.print()">Imprimir Página 1</button>
     <a href="page2.html" class="btn-nav">Ir a Página 2</a>
   </div>
 
@@ -39,19 +40,19 @@
     </div>
 
     <p class="body-text">
-      Yo, <span class="filled-val">Norma Guadalupe García Flores</span>, mayor de edad, <span class="filled-val">soltera</span>, <span class="filled-val">Profesora de Educación Media</span>, Tarjeta de Identidad No. <span class="filled-val">0801196604650</span>, Libreta de Ahorro del Banco <span class="filled-val">BANPAIS</span> No. <span class="filled-val">21-617-006269-3</span> y con domicilio en <span class="filled-val">Residencial 17 de Septiembre, Bloque Q, Casa 16, II Etapa, último bloque antes del Colegio de Abogados</span>, del Municipio de <span class="filled-val">La Ceiba</span> Departamento de <span class="filled-val">Atlántida</span>; con el debido respeto comparezco solicitando el Beneficio de PENSION POR VEJEZ, basándome en los hechos y consideraciones legales siguientes:
+      Yo, <span class="filled-val" contenteditable="true" data-key="nombre">Norma Guadalupe García Flores</span>, mayor de edad, <span class="filled-val" contenteditable="true" data-key="estadoCivil">soltera</span>, <span class="filled-val" contenteditable="true" data-key="titulo">Profesora de Educación Media</span>, Tarjeta de Identidad No. <span class="filled-val" contenteditable="true" data-key="identidad">0801196604650</span>, Libreta de Ahorro del Banco <span class="filled-val" contenteditable="true" data-key="bancoNombre">BANPAIS</span> No. <span class="filled-val" contenteditable="true" data-key="bancoCuenta">21-617-006269-3</span> y con domicilio en <span class="filled-val" contenteditable="true" data-key="domicilio">Residencial 17 de Septiembre, Bloque Q, Casa 16, II Etapa, último bloque antes del Colegio de Abogados</span>, del Municipio de <span class="filled-val" contenteditable="true" data-key="municipio">La Ceiba</span> Departamento de <span class="filled-val" contenteditable="true" data-key="departamento">Atlántida</span>; con el debido respeto comparezco solicitando el Beneficio de PENSION POR VEJEZ, basándome en los hechos y consideraciones legales siguientes:
     </p>
 
     <div class="section-title">HECHOS</div>
 
     <ol class="hechos-list">
       <li>
-        Tengo <span class="filled-val">60</span> años de edad y soy originaria de <span class="filled-val">Tegucigalpa M.D.C.</span>
+        Tengo <span class="filled-val" contenteditable="true" data-key="edad">60</span> años de edad y soy originaria de <span class="filled-val" contenteditable="true" data-key="origen">Tegucigalpa M.D.C.</span>
       </li>
       <li>
-        He prestado mis servicios profesionales en el Campo de la Educación Nacional por espacio de <span class="filled-val">37 años, 5 meses, 6 días</span>, extremo que acredito con la(s) Certificación(es) de Trabajo emitida(s) por <span class="filled-val">ESCALAFÓN DEL MAGISTERIO</span>.
+        He prestado mis servicios profesionales en el Campo de la Educación Nacional por espacio de <span class="filled-val" contenteditable="true" data-key="tiempoServicio">37 años, 5 meses, 6 días</span>, extremo que acredito con la(s) Certificación(es) de Trabajo emitida(s) por <span class="filled-val" contenteditable="true" data-key="certificacionEmitida">ESCALAFÓN DEL MAGISTERIO</span>.
       </li>
-      <li>
+      <li contenteditable="true" data-key="hecho3Prestamo">
         En vista de tener Préstamo(s) con el Instituto, autorizo al mismo para que del monto de mi Pensión, se haga(n) la(s) deducción(es) correspondiente(s), hasta la cancelación total del (de los) préstamo(s) que tengo pendiente(s) con esta Institución, aun si dicha obligación afectara más del 40% del monto de mi pensión.
       </li>
       <li>
@@ -61,7 +62,7 @@
         Ratifico que, mediante la presente solicitud me doy por entendido que el beneficio de Pensión por Vejez será mi pensión principal.
       </li>
       <li>
-        Autorizo a que el monto de mi beneficio sea acreditado a la cuenta de ahorro número <span class="filled-val">21-617-006269-3</span>, del Banco <span class="filled-val">BANPAIS</span>.
+        Autorizo a que el monto de mi beneficio sea acreditado a la cuenta de ahorro número <span class="filled-val" contenteditable="true" data-key="cuentaAcreditar">21-617-006269-3</span>, del Banco <span class="filled-val" contenteditable="true" data-key="bancoAcreditar">BANPAIS</span>.
       </li>
     </ol>
 
@@ -71,5 +72,6 @@
     </p>
   </div>
 
+  <script src="js/app.js"></script>
 </body>
 </html>
